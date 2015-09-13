@@ -1,0 +1,100 @@
+/* 设置一级导航样式 */
+#nav .nav_text {
+	position: relative;
+    width: 1020px;
+    margin: 0 auto;
+    z-index: 6;
+}
+
+.nav_text ul {
+    border-bottom: 1px solid rgba(131,131,131,0.3);
+    border-top: 0 solid rgba(131,131,131,0.3);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav_text ul li {
+	position: relative;
+	display: block;
+    line-height: 35px;
+	width: 102px;
+	float: left;
+}
+
+.nav_text ul li a {
+	display: inline-block;
+	width: 102px;
+	color: #000;
+	font-family: Microsoft Yahei;
+	text-align: center;
+}
+
+.nav_text ul li a.nav_title {
+	font-weight: 800;
+    font-size: 16px;
+	font-family: SimSun;
+}
+
+.nav_text ul li:hover {
+	background-color: #db0000;
+}
+
+.nav_text ul li a:hover {
+	color: #fff;
+}
+
+/* 设置二级导航样式 */
+.nav_text ul li ul {
+	display: none;
+}
+
+.nav_text ul li:hover ul {
+    display: block;
+    position: absolute;/* 加了这个弹出来的变颜色了 */
+    width: 102px;
+    background-color: rgba(131,131,131,0.6);
+}
+
+.nav_text ul li:hover ul li:hover a:after {
+    content: ">";
+}
+
+.nav_text ul li:hover ul li a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.nav_text ul li:hover ul li a:hover {
+    /*先不写*/
+}
+
+/* 设置三级导航样式 */
+.nav_text ul li:hover ul li ul {
+    display: none;
+}
+
+.nav_text ul li:hover ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 90px;
+    top: 0;
+    left: 102px;
+    background-color: rgba(131,131,131,0.6)
+}
+
+.nav_text ul li:hover ul li:hover ul li {
+    width: 90px;
+}
+
+.nav_text ul li:hover ul li:hover ul li a {
+    display: inline-block;
+    width: 90px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.nav_text ul li:hover ul li:hover ul li a:hover {
+    color: #fff;
+}
