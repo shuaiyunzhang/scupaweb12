@@ -11,7 +11,8 @@ body {
 	overflow-x: hidden;
 	background-image: url("../images/001.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-position-x: 50%;
+	background-position-y: 0;
 }
 
 .header,.content,.footer {
@@ -25,6 +26,10 @@ body {
 .footer {
 	margin-top: 45px;
 	background-color: rgb(170, 170, 170);
+}
+
+.footer.sub {
+	margin-top: 8%;
 }
 
 .clear-fix:after {

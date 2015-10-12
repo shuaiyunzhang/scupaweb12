@@ -79,7 +79,6 @@
 }
 
 .header #logo .button {
-	display: block;
 	float: right;
 	margin-right: 5px;
 	border: 1px solid #cccccc;
